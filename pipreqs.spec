@@ -4,7 +4,7 @@
 #
 Name     : pipreqs
 Version  : 0.4.9
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/67/63/84409df1acd879d239e53599de2b3df45013e6cf46406fd94e86822635f3/pipreqs-0.4.9.tar.gz
 Source0  : https://files.pythonhosted.org/packages/67/63/84409df1acd879d239e53599de2b3df45013e6cf46406fd94e86822635f3/pipreqs-0.4.9.tar.gz
 Summary  : Pip requirements.txt generator based on imports in project
@@ -15,6 +15,7 @@ Requires: pipreqs-license = %{version}-%{release}
 Requires: pipreqs-python = %{version}-%{release}
 Requires: pipreqs-python3 = %{version}-%{release}
 Requires: docopt
+Requires: yarg
 BuildRequires : buildreq-distutils3
 BuildRequires : docopt-python
 BuildRequires : yarg
@@ -68,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1551109502
+export SOURCE_DATE_EPOCH=1551190980
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
